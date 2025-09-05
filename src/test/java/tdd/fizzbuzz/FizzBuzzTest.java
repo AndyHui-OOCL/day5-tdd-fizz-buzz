@@ -37,4 +37,15 @@ public class FizzBuzzTest {
 
         assertEquals("Buzz", result);
     }
+
+    @Test
+    public void should_return_FizzBuzz_when_countOff_given_multiple_of_15(){
+        // Given
+        int input = 15;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        // When
+        String result = fizzBuzz.countOff(input);
+
+        assertEquals("FizzBuzz", result);
+    }
 }
